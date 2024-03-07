@@ -17,7 +17,7 @@ test('should greet Buenos días in the morning', () => {
 });
 
 test('should greet Ya son las 17:00', () => {
-    // Mocking isMorning() to always return true
+    
     Clock.mockImplementation(() => ({
         isMorning: jest.fn(() => false),
         getCurrentTime: jest.fn(() => "17:00"),
